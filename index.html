@@ -16,22 +16,22 @@
             <label for="file" class="rounded-lg bg-indigo-500 px-5 py-2 text-white cursor-pointer">Загрузить</label>
             <div class="flex flex-col">
                 <div class="flex items-center gap-2">
-                    <input type="radio" name="" id="">
-                    <p>Модель 1</p>
+                    <input type="radio" name="model" id="m1">
+                    <label for="m1">Модель 1</label>
                 </div>
                 <div class="flex flex-col">
                     <div class="flex items-center gap-2">
-                        <input type="radio" name="" id="">
-                        <p>Модель 2</p>
+                        <input type="radio" name="model" id="m2">
+                        <label for="m2">Модель 2</label>
                     </div>
                     <div class="flex items-center gap-2 ml-6">
-                        <input type="checkbox" name="" id="">
-                        <p>Разделение спикеров?</p>
+                        <input type="checkbox" name="" id="m2_check">
+                        <label for="m2_check">Разделение спикеров?</label>
                     </div>
                 </div>
                 <div class="flex items-center gap-2">
-                    <input type="radio" name="" id="">
-                    <p>Модель 3</p>
+                    <input type="radio" name="model" id="m3">
+                    <label for="m3">Модель 3</label>
                 </div>
             </div>
             <button class="rounded-lg bg-pink-600 text-white py-2 px-5">Транскрибировать</button>
@@ -42,14 +42,24 @@
                 <input type="text" class="rounded-lg w-96 py-2 px-5 border border-black max-h-10">
                 <p>Найдено повторений. <span>125</span></p>
             </div>
-            <button class="rounded-lg bg-pink-600 text-white py-2 px-5">Найти</button>
+            <button class="rounded-lg bg-pink-600 text-white py-2 px-5">Найти</button>            
         </form>
     </header>  
 
-    <div class="container mx-auto flex justify-center gap-10 items-center mt-10">
-        <audio src="Assets/Audio/rickroll.mp3" controls></audio>
+    <form class="container mx-auto flex justify-center gap-10 items-center mt-10">
+        <audio src="Assets/Audio/rickroll.mp3" controls class="w-96"></audio>
+        <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+                <input type="radio" id="a1" name="analys">
+                <label for="a1">Анализ тип 1</label>
+            </div>
+            <div class="flex items-center gap-2">
+                <input type="radio" id="a2" name="analys">
+                <label for="a2">Анализ тип 2</label>
+            </div>
+        </div>
         <button class="rounded-lg bg-pink-600 text-white py-2 px-5">Провести анализ</button>
-    </div>
+    </form>
 
     <div class="container mx-auto gap-12 flex mt-10">
         <textarea name="" id="" cols="30" class="p-4 h-[620px] resize-none"></textarea>
@@ -96,6 +106,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-4">
+            <textarea name="" id="" cols="60" class="p-4 h-[620px] resize-none"></textarea>
             <textarea name="" id="" cols="60" class="p-4 h-[620px] resize-none"></textarea>
             <textarea name="" id="" cols="60" class="p-4 h-[620px] resize-none"></textarea>
         </div>
