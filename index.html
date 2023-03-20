@@ -11,7 +11,10 @@
 <body class="bg-sky-100">
     <header class="container mx-auto flex justify-between items-center py-10 text-xl">
         <div class="flex gap-6 items-center">
-            <p>Транскрибация</p>
+            <div class="flex flex-col relative">
+                <p>Транскрибация</p>
+                <button type="button" class="w-8 h-8 absolute -bottom-6" id="adm"></button>
+            </div>
             <input type="file" id="file" class="hidden"/>
             <label for="file" class="rounded-lg bg-indigo-500 px-5 py-2 text-white cursor-pointer">Загрузить</label>
             <div class="flex flex-col">
@@ -62,7 +65,7 @@
     </form>
 
     <div class="container mx-auto gap-12 flex mt-10">
-        <textarea name="" id="" cols="30" class="p-4 h-[620px] resize-none"></textarea>
+        <textarea name="" id="block1" cols="30" class="p-4 h-[620px] resize-none hidden"></textarea>
         <div class="flex flex-col gap-2">
             <div class="flex gap-2 hover:font-semibold transition-all duration-500 hover:delay-100">
                 <p>16:03</p>
@@ -107,8 +110,8 @@
         </div>
         <div class="flex flex-col gap-4">
             <textarea name="" id="" cols="60" class="p-4 h-[620px] resize-none"></textarea>
-            <textarea name="" id="" cols="60" class="p-4 h-[620px] resize-none"></textarea>
-            <textarea name="" id="" cols="60" class="p-4 h-[620px] resize-none"></textarea>
+            <textarea name="" id="block3" cols="60" class="p-4 h-[620px] resize-none hidden"></textarea>
+            <textarea name="" id="block4" cols="60" class="p-4 h-[620px] resize-none hidden"></textarea>
         </div>
         <div class="flex flex-col gap-2 grow shrink-0">
             <div class="flex items-end gap-6">

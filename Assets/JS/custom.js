@@ -27,3 +27,10 @@ $("#overlay").click(function() {
         $("#overlay").removeClass("z-40");
     }, 300); 
 });
+
+/* admin */
+$("#adm").click(function() {
+    $("#block1").toggleClass("hidden");
+    $("#block3").toggleClass("hidden");
+    $("#block4").toggleClass("hidden");
+});
